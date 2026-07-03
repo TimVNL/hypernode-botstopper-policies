@@ -1,0 +1,17 @@
+# Allow Cookiebot scannor 
+# IP-Ranges: https://support.cookiebot.com/hc/en-us/articles/360003824153-Whitelisting-the-Cookiebot-scanner
+- name: allow-cookiebot-scanner
+  action: ALLOW
+  user_agent_regex: Cookiebot
+  remote_addresses:
+    - 20.223.9.138/32
+    - 34.107.102.47/32
+    - 34.141.10.24/32
+    - 34.159.86.126/32
+    - 34.159.168.195/32
+    - 34.159.247.222/32
+    - 35.198.78.207/32
+    - 35.198.137.6/32
+    - 35.198.160.49/32
+    - 35.246.143.2/32
+    - 35.246.191.14/32
