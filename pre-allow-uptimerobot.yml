@@ -1,4 +1,4 @@
-# Allow Cookiebot scannor 
+# Allow uptimerobot monitoring 
 # IP-Ranges: https://uptimerobot.com/help/locations/
 - name: allow-uptimerobot-monintoring
   action: ALLOW
