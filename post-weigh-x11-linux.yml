@@ -1,3 +1,5 @@
+# Add extra weight for requests from Linux desktop user agents using X11.
+# This can help flag automated or scripted traffic that mimics desktop browsers.
 - name: weigh-x11-linux
   action: WEIGH
   user_agent_regex: "X11; Linux"

@@ -1,8 +1,10 @@
+# Extra weight for Top 15 high-bot countries, excluding EU/EFTA/UK/US
+# Based on https://radar.cloudflare.com/bots?dateRange=52w 
 - name: weigh-countries-with-high-bot-traffic
   action: WEIGH
   expression:
     all:
       - '"X-Country-Code" in headers'
-      - 'headers["X-Country-Code"] in ["BR", "SG","IN","VN"]'
+      - 'headers["X-Country-Code"] in ["BR", "SG", "IN", "VN", "CN", "JP", "IR", "HK", "RU", "ID", "MX", "PH", "PK", "TW", "NG"]'
   weight:
     adjust: 20
