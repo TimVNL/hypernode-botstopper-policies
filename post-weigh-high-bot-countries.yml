@@ -1,0 +1,8 @@
+- name: weigh-countries-with-high-bot-traffic
+  action: WEIGH
+  expression:
+    all:
+      - '"X-Country-Code" in headers'
+      - 'headers["X-Country-Code"] in ["BR", "SG","IN","VN"]'
+  weight:
+    adjust: 20
