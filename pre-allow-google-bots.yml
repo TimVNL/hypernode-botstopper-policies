@@ -1,0 +1,6 @@
+#  Allow requests with common Google crawler user agents.
+- name: allow-all-google-temp
+  action: ALLOW
+  expression:
+    all:
+      - userAgent.matches("(?i:(googlebot|adsbot-google|mediapartners-google|apis-google|googleother|feedfetcher-google|storebot-google|google-inspectiontool|google-extended))")

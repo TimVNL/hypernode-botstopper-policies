@@ -1,0 +1,7 @@
+# Allow traffic from Benelux countries: Netherlands, Belgium, and Luxembourg.
+- name: allow-benelux
+  action: ALLOW
+  expression:
+    all:
+      - '"X-Country-Code" in headers'
+      - 'headers["X-Country-Code"] in ["NL", "BE", "LU"]'

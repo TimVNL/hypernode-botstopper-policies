@@ -1,0 +1,5 @@
+- name: weigh-x11-linux
+  action: WEIGH
+  user_agent_regex: "X11; Linux"
+  weight:
+    adjust: 20
