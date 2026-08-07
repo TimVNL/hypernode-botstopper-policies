@@ -1,0 +1,7 @@
+# Deny requests from countries outside the configured EU/EEA, UK-related, and US allowlist
+- name: deny-non-eu-uk-us
+  action: DENY
+  expression:
+    all:
+      - '"X-Country-Code" in headers'
+      - '!(headers["X-Country-Code"] in ["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "CH", "GB", "GG", "JE", "IM", "US"])'
