@@ -1,0 +1,21 @@
+# Allow Sendcloud
+# IP-Ranges: https://cdn.sendcloud.com/global-media/public-ips.txt
+- name: allow-sendcloud
+  action: ALLOW
+  user_agent_regex: Sendcloud
+  remote_addresses:
+    - 3.120.127.184/32
+    - 3.121.38.108/32
+    - 3.122.58.116/32
+    - 35.158.146.12/32
+    - 52.57.76.59/32
+    - 52.29.84.45/32
+    - 52.29.82.100/32
+    - 52.58.233.101/32
+    - 52.58.235.98/32
+    - 18.198.117.128/32
+    - 18.158.18.128/32
+    - 3.124.13.189/32
+    - 3.72.184.234/32
+    - 3.70.35.13/32
+    - 18.195.37.52/32
