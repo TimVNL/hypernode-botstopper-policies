@@ -1,0 +1,5 @@
+# Allow CookieYesbot
+# More info: https://www.cookieyes.com/documentation/cookieyesbot/
+- name: allow-CookieYesbot-scanner
+  action: ALLOW
+  user_agent_regex: CookieYesbot
