@@ -1,0 +1,5 @@
+# Allow InfiniteWP - Manage multiple WordPress sites in a dashboard
+# More info: https://infinitewp.com
+- name: allow-infinitewp
+  action: ALLOW
+  user_agent_regex: InfiniteWP
