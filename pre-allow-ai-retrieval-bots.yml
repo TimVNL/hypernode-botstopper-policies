@@ -1,0 +1,6 @@
+# Allow known AI retrieval and citation bots so answer engines and assistant-triggered fetchers can access the site.
+- name: allow-retrieval-citation-bots
+  action: ALLOW
+  expression:
+    all:
+      - userAgent.matches("(?i:(PerplexityBot|Perplexity-User|OAI-SearchBot|ChatGPT-User|ClaudeBot))")
