@@ -1,0 +1,5 @@
+# Allow SleakBot
+# https://sleak.chat
+- name: allow-sleakbot
+  action: ALLOW
+  user_agent_regex: SleakBot
