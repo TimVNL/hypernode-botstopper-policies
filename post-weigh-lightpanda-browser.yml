@@ -1,0 +1,7 @@
+# Increase the score for requestsoriginating from Lightpanda Browser,
+# a headless browser built for AI agents and automation.
+- name: weigh-lightpanda-browser
+  action: WEIGH
+  user_agent_regex: "Lightpanda"
+  weight:
+    adjust: 20
