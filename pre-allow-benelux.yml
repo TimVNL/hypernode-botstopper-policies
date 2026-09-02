@@ -1,5 +1,5 @@
-# Allow traffic from Benelux countries: Netherlands, Belgium, and Luxembourg.
-- name: allow-benelux
+# Allow traffic from Benelux countries without applying a challenge.
+- name: allow-benelux-without-challenge
   action: ALLOW
   expression:
     all:
