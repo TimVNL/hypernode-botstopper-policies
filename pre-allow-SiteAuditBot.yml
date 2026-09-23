@@ -1,0 +1,7 @@
+# Allow SiteAuditBot
+# https://www.semrush.com/kb/681-site-audit-troubleshooting#allowlist-bot
+- name: allow-SiteAuditBot
+  action: ALLOW
+  user_agent_regex: SiteAuditBot
+  remote_addresses:
+    - 85.208.98.128/25
