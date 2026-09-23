@@ -3,4 +3,4 @@
   action: ALLOW
   expression:
     all:
-      - userAgent.matches("(?i:(googlebot|adsbot-google|mediapartners-google|apis-google|googleother|feedfetcher-google|storebot-google|google-inspectiontool|google-extended))")
+      - userAgent.matches("(?i:(googlebot|adsbot-google|mediapartners-google|apis-google|googleother|feedfetcher-google|storebot-google|google-inspectiontool|google-extended|Google-Apps-Script|Google-Site-Verification))")
